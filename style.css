@@ -14,7 +14,7 @@
 		font-size: 7em;
 	}
 	.jumbotron h3 {
-		font-size: 5em;
+		font-size: 3em;
 	}
   }
 @media (max-width: 768px) {
@@ -22,7 +22,7 @@
 		font-size: 5em;
 	}
 	.jumbotron h3 {
-		font-size: 3em;
+		font-size: 2em;
 	}
 }
 @media (max-width: 576px) {
@@ -30,7 +30,7 @@
 		font-size: 3em;
 	}
 	.jumbotron h3 {
-		font-size: 2em;
+		font-size: 1em;
 	}	
 }
 
