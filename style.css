@@ -9,6 +9,14 @@
 
 
 /*---Media Queries --*/
+@media (max-width: 1200px) {
+	.jumbotron h1 {
+		font-size: 7em;
+	}
+	.jumbotron h3 {
+		font-size: 3em;
+	}
+  }
 @media (max-width: 992px) {
 	.jumbotron h1 {
 		font-size: 7em;
