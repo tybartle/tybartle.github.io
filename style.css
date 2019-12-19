@@ -1,57 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-body {
-    display: flex;
-}
 
-/*ScrollBar Width*/
-body::-webkit-scrollbar {
-  width: 5px;
-}
-
-/*ScrollBar Track*/
-body::-webkit-scrollbar-thumb {
-  background: whitesmoke;
-  border-radius: 10px;
-}
-
-h1,h2,h3,.pbtn {
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 25px;
-  color: white;
-}
-
-.content {
-  width: 100vw;
-  overflow: hidden;
-}
-
-/*Header*/
-.header {
-  min-height: 100vh;
-  min-width: 100%;
-  display: table;
-  background: black;
-}
-
-#center-content {
-  min-height: 100vh;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#center-content h1 {
-  font-family: monospace;
-  padding-bottom: 5px;
-  border-bottom: 2px solid white;
-  color: white;
-}
-
-#center-content h2 {
-  font-family: monospace;
-  color: white;
+.jumbotron {
+    background-color: #000000;
+    color: white;
+    text-align: center;
 }
 
 .timelineOverflow {
