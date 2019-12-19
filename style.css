@@ -5,6 +5,7 @@ body {
 }
 
 /* ScrollBar */
+
 body::-webkit-scrollbar {
   width: 5px;
 }
@@ -31,11 +32,12 @@ h1,h2,h3,.pbtn {
 }
 
 /* Header */
+
 .header {
   min-height: 100vh;
   min-width: 100%;
   display: table;
-  background: black;
+  background: navy;
 }
 
 #center-content {
@@ -55,6 +57,31 @@ h1,h2,h3,.pbtn {
 #center-content h2 {
   font-family: monospace;
   color: white;
+}
+
+/* End Header */
+
+.body-container {
+  font-family: monospace;
+  background-color: black;
+  color: grey:
+}
+
+/* Info */
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 15px
+  color: white;
+}
+
+.info {
+  padding-top: 20px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timelineOverflow {
