@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb {
 /* End of ScrollBar */
 
 h1,h2,h3,.pbtn {
-  font-family: monospace;
+  font-family: "Lucida Console", Monaco, monospace;
   font-weight: bold;
   font-size: 25px;
   color: white;
@@ -35,7 +35,26 @@ h1,h2,h3,.pbtn {
 
 /* NavBar */
 
+.navbar {
+  background: white;
+  font-size: 15px;
+}
 
+.nav-item a {
+  color: #239023;
+}
+
+.nav-item a:hover {
+  color: #196719;
+}
+
+.fa-bars {
+  color: #239023;
+}
+
+.fa-bars:hover {
+  color: #196719;
+}
 
 /* Header */
 
@@ -58,15 +77,13 @@ h1,h2,h3,.pbtn {
 }
 
 .center-content h1 {
-  font-family: monospace;
-  font-size: 70px;
+  font-size: 5em;
   padding-bottom: 5px;
   border-bottom: 2px solid white;
   color: white;
 }
 
 .center-content h2 {
-  font-family: monospace;
   font-size: 40px;
   color: white;
 }
@@ -74,7 +91,8 @@ h1,h2,h3,.pbtn {
 /* End Header */
 
 .body-container {
-  font-family: monospace;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 100%;
   background-color: #333333;
   color: #white:
 }
@@ -428,7 +446,6 @@ h1,h2,h3,.pbtn {
 }
 
 #links h3 {
-  font-family: monospace;
   font-size: 20px;
   text-align: center;
 }
@@ -484,7 +501,6 @@ img {
 }
 
 #message-input {
-  font-family: monospace;
   font-size: 15px;
   color: white;
   width: 100%;
@@ -495,7 +511,6 @@ img {
 }
 
 #contact-button {
-  font-family: monospace;
   font-size: 20px;
   color: white;
   width: 100%;
