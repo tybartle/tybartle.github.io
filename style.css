@@ -43,6 +43,14 @@ h1,h2,h3,.pbtn {
   font-size: 15px;
 }
 
+.dropdown-item {
+  padding: 0;
+}
+
+.dropdown-item:hover {
+  background: white;
+}
+
 .nav-item a, p {
   color: #239023;
 }
@@ -57,6 +65,10 @@ h1,h2,h3,.pbtn {
 
 .fa-bars:hover {
   color: #196719;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -215,6 +227,7 @@ h1,h2,h3,.pbtn {
 #timeline{
   margin: auto;
   margin-top: 50px;
+  padding-bottom: 20px;
   width: 100vw;
   background: inherit;
   display: inline-block;
@@ -613,6 +626,7 @@ img {
 }
 
 #copyright {
+  font-size: 75%;
   padding-top: 15px;
   padding-right: 10px;
   margin: 0;
