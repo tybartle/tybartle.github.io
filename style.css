@@ -771,12 +771,15 @@ html {
   border-style: solid;
   border-radius: 5px;
   border-width: 2px;
-  border-color: #239023;
-  background: #333333;
+  border-color: white;
+  background: #239023;
 }
 
 #contact-button:focus {
   outline: 0 none;
+  color: #239023;
+  border-color: #239023;
+  background: #333333;
 }
 
 /*End of Contact Me */
