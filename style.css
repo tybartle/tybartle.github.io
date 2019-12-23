@@ -74,7 +74,7 @@ html {
 /* Header */
 
 .header_image {
-  background:url('images/binary_background1.jpg');
+  background:url('images/binary_background.jpg');
   background-size: cover;
 }
 
@@ -117,7 +117,7 @@ html {
 /* Info */
 
 .section-title {
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
   width: 90%;
   padding-bottom: 10px;
@@ -152,6 +152,12 @@ html {
 }
 
 #aboutRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 6px;
   background: #222222;
 }
 
@@ -170,6 +176,7 @@ html {
 #aboutLeftCol .panel {
   background: #222222;
   padding-left: 15px;
+  padding-top: 20px;
   padding-right: 15px;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -183,9 +190,15 @@ html {
   color: #adadad;
 }
 
+#selfImage {
+  max-width: 500px;
+  margin: auto;
+}
+
 #aboutMidCol .panel {
   background: #222222;
   padding-left: 15px;
+  padding-top: 20px;
   padding-right: 15px;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -209,8 +222,7 @@ html {
 #aboutRightCol .panel {
   background: #222222;
   border-radius: 6px;
-  padding-top: 10px;
-  padding-bottom: 1px;
+  padding-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -218,8 +230,15 @@ html {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 1px;
+}
+
+#aboutPerson {
+  padding-bottom: 20px;
+}
+
+#skillsRow {
+  background: #222222;
+  border-radius: 6px;
 }
 
 #skillsRow h2 {
@@ -229,18 +248,8 @@ html {
   margin-bottom: 10px;
 }
 
-#skillsRow .panel p {
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 15px;
-  font-weight: 300;
-  color: #adadad;
-}
-
 #skillsRow .panel {
-  background: #222222;
-  border-radius: 6px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 1px;
   margin-bottom: 10px;
 }
@@ -498,43 +507,88 @@ html {
   background: inherit;
 }
 
+.projectList {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project-panel {
   margin-top: 20px;
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   min-height: 350px;
+  border-radius: 6px;
   background: #222222;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.projectImages_col {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.projectImages {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: auto;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: white;
+}
+
+.carousel-item img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.carousel-indicators {
+  padding-bottom: 15px;
+}
+
 .projectDesc h1 {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: monospace;
   font-weight: bold;
   padding-left: 10px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .projectDesc h3 {
   font-size: 20px;
   font-weight: 500;
-  padding: 10px;
-  margin: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   color: #239023
 }
 
-.projectDesc .tagline {
-  padding-top: 0;
+.project_date {
   padding-bottom: 15px;
   border-bottom: white 2px solid;
 }
 
 .projectContent > .projectDesc {
-  width: 90%;
-  margin: 0 auto;
   text-align: left;
   padding-bottom: 15px !important;
 }
@@ -551,7 +605,7 @@ html {
 .projectDesc .projectTechs {
   border-top: white 2px solid;
   padding-top: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   font-size: 15px;
 }
 
@@ -622,13 +676,6 @@ html {
   text-align: center;
 }
 
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* End of Documents & Links */
 
 /* Contact Me */
@@ -654,6 +701,7 @@ img {
   margin-right: auto;
   width: 80%;
   max-width: 800px;
+  border-radius: 6px;
   background: #222222;
   display:flex;
   justify-content: center;
