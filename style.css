@@ -347,15 +347,8 @@ html {
   background: #333333;
 }
 
-#updates_key button:hover {
-  border-color: inherit;
-  background: #333333;
-}
-
-#updates_key button.deselected:hover, button:focus {
+#updates_key button:focus {
   outline: 0;
-  border-color: #222222;
-  background: #222222;
 }
 
 .sub-header {
@@ -447,7 +440,7 @@ html {
   display: flex;
   flex-direction: column;
   font-size: 15px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .updates li:hover {
@@ -756,4 +749,5 @@ img {
   display: flex;
   justify-content: flex-end;
   background: white;
+  color: #239023;
 }
