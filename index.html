@@ -9,6 +9,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://kit.fontawesome.com/b59b2a13e6.js" crossorigin="anonymous"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="js_functions.js"></script>
 	<link href="style.css" rel="stylesheet">
 
 	<title> Tyler Bartleson </title>
@@ -27,7 +29,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 					<i class="fas fa-bars"></i>
 				</button>
-				
+
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
@@ -81,50 +83,93 @@
 			<div class="container-fluid" id="about">
 				<h1 class="section-title">ABOUT ME</h1>
 
-				<div class="row">
+				<div class="row" id="aboutRow">
 
-					<div class="col-lg-4 about-col" id="aboutLeftCol">
+					<div class="col-xl-4 about-col" id="aboutLeftCol">
+
 						<div class="panel" id="aboutStudent">
 							<h2>AS A STUDENT</h2>
-							<p>This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.</p>
-						</div>
-
-						<div class="panel" id="aboutDev">
-							<h2>AS A SOFTWARE DEVELOPER</h3>
-							<p>This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.</p>
+							<p>
+								My name is Tyler (Ty) Bartleson and I am currently a senior at Iowa State University.
+								I am majoring in Software Engineering and am set to graduate and receive my Bachelor of Science degree in May 2020.
+								Throughout my time at ISU I have been a part of a few different groups and organizations such as
+								the Software Engineering Learning Community, the Computer Science and Software Engineering Club,
+								the Game Development Club, and the University Honors Program.
+							</p>
 						</div>
 
 						<div class="panel" id="aboutPerson">
 							<h2>AS A PERSON</h2>
-							<p>This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.</p>
+							<p>
+								Outside of my academic and professional interests I also enjoy many hobbies and activities.
+								Some of these include a passion for video games, board games, and movies as well as some outdoor
+								activities such as hiking, kayaking, and camping. I also know how to play the violin, enjoy
+								anything and everything superhero related, and love experiencing new things.
+							</p>
 						</div>
+
 					</div>
 
-					<div class="col-lg-4 about-col" id="aboutMidCol">
-						<div class="panel" id="selfImage"
-							<p>Image will be here</p>
+					<div class="col-xl-4 about-col" id="aboutMidCol">
+
+						<div class="panel" id="selfImage">
+							<img class="img-responsive" style="width: 100%; overflow: hidden;" src="images/profile_image.png">
 						</div>
+
 					</div>
 
-					<div class="col-lg-4 about-col" id="aboutRightCol">
+					<div class="col-xl-4 about-col" id="aboutRightCol">
+
+						<div class="panel" id="aboutDev">
+							<h2>AS A SOFTWARE DEVELOPER</h3>
+							<p>
+								The first time I learned how to code I was a senior in high school
+								when I was a part of the school's first ever Computer Science course.
+								I quickly became passionate about it and knew that it is what I wanted to pursue for a career.
+								Since then, I have coded many different types of software and projects such as
+							 	video games, websites, and both mobile and web applications.
+								My first professional coding experience was after my freshman year at ISU when I worked for
+								the summer as a Software Engineering Intern at Innovative Software Engineering.
+								Throughout this internship I worked with the two other interns on multiple coding projects
+								and even teaching a moblie app coding camp for high schoolers interested in a software development career.
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 about col" id="skillsRow">
 						<div class="panel" id="aboutSkills">
 							<h2>SKILLS & KNOWLEDGE AREAS</h2>
 							<h3>FRONTEND:</h3>
 							<ul class="feSkills">
-
+								<li>HTML / CSS</li>
+								<li>JavaScript</li>
+								<li>VueJS</li>
+								<li>NodeJS</li>
 							</ul>
 							<h3>BACKEND:</h3>
 							<ul class="beSkills">
-
+								<li>Java</li>
+								<li>C</li>
+								<li>C++</li>
+								<li>C#</li>
+								<li>SQL</li>
 							</ul>
 							<h3>DEVELOPMENT:</h3>
 							<ul class="devSkills">
-
+								<li>Android</li>
+								<li>iOS</li>
+								<li>Amazon Web Services</li>
+								<li>APIs</li>
+								<li>Agile</li>
 							</ul>
 						</div>
 					</div>
-
 				</div>
+
 				<div id="end-about"></div>
 			</div>
 
@@ -133,11 +178,45 @@
 			<div class="container-fluid" id="timeline">
 				<h1 class="section-title">TIMELINE</h1>
 
-				<div class="row">
+				<div class="row" id="timeline_row">
+
+					<p>Click on the buttons below to customize which updates are shown.</p>
+
+					<div class="row" id="updates_key">
+
+						<div class="col-lg-2"></div>
+
+						<div class="col-lg-2 education_col">
+							<button type="button" id="education_button" onclick="hideEducation()">
+								Educational
+							</button>
+						</div>
+
+						<div class="col-lg-2 professional_col">
+							<button type="button" id="professional_button" onclick="hideProfessional()">
+								Professional
+							</button>
+						</div>
+
+						<div class="col-lg-2 event_col">
+							<button type="button" id="event_button" onclick="hideEvent()">
+								Event
+							</button>
+						</div>
+
+						<div class="col-lg-2 misc_col">
+							<button type="button" id="misc_button" onclick="hideMisc()">
+								Miscellaneous
+							</button>
+						</div>
+
+						<div class="col-lg-2"></div>
+
+					</div>
 
 					<!--- Past --->
 
-					<div class="col-lg-4 tl-col" id="tlLeftCol">
+					<div class="col-xl-4 tl-col" id="tlLeftCol">
 						<div class="panel" id="past">
 
 							<div class="sub-header">
@@ -148,58 +227,146 @@
 								<ul class="dropdown">
 
 									<li class="education">
-										<div class="date">Test Date</div>
+										<div class="date">September 2019</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Began a year-long coding project with my team for Senior Design</div>
+											<div class="details">The project was CowChips4Charity (See Past Projects) and I was the Game Team Leader!</div>
 										</div>
 									</li>
 
-									<li class="career">
-										<div class="date">Test Date</div>
+									<li class="education">
+										<div class="date">August 2019</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="event">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Began my fourth year at Iowa State</div>
+											<div class="details">The home stretch!</div>
 										</div>
 									</li>
 
 									<li class="misc">
-										<div class="date">Test Date</div>
+										<div class="date">May 2019</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Began development on this website</div>
+											<div class="details">My first portfolio and domain!</div>
 										</div>
 									</li>
 
-									<li class="misc">
-										<div class="date">Test Date</div>
+									<li class="education">
+										<div class="date">August 2018</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Started another semester-long coding project with a new team</div>
+											<div class="details">Together we made WITWAY! (See Past Projects)</div>
 										</div>
 									</li>
 
-									<li class="misc">
-										<div class="date">Test Date</div>
+									<li class="education">
+										<div class="date">August 2018</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Began my third year at Iowa State</div>
+											<div class="details">Halfway done!</div>
 										</div>
 									</li>
 
-									<li class="misc">
-										<div class="date">Test Date</div>
+									<li class="education">
+										<div class="date">May 2018</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Began taking summer classes at ISU</div>
+											<div class="details">Finished up all of my gen eds!</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">January 2018</div>
+										<div class="eventDesc">
+											<div class="title">Started my first semester-long coding project with my team</div>
+											<div class="details">We created Util3D! (See Past Projects)</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">October 2017</div>
+										<div class="eventDesc">
+											<div class="title">Joined the FHP Leadership Committee</div>
+											<div class="details">I helped plan and organize anything and everything freshman honors related.</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">August 2017</div>
+										<div class="eventDesc">
+											<div class="title">Began my tenure as an FHP Leader</div>
+											<div class="details">My co-Leader and I taught a group of 13 freshman all about ISU and the Honors Program.</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">August 2017</div>
+										<div class="eventDesc">
+											<div class="title">Began my second year at Iowa State</div>
+											<div class="details">Goodbye ISE, hello ISU!</div>
+										</div>
+									</li>
+
+									<li class="professional">
+										<div class="date">June 2017</div>
+										<div class="eventDesc">
+											<div class="title">Began teaching a coding course for high schoolers as part of my internship</div>
+											<div class="details">My first teaching experience!</div>
+										</div>
+									</li>
+
+									<li class="professional">
+										<div class="date">May 2017</div>
+										<div class="eventDesc">
+											<div class="title">Started working as a Software Engineering Intern at Innovative Software Engineering (ISE)</div>
+											<div class="details">My first job in the industry!</div>
+										</div>
+									</li>
+
+									<li class="professional">
+										<div class="date">March 2017</div>
+										<div class="eventDesc">
+											<div class="title">Had my first interview in the Software Engineering industry</div>
+											<div class="details">I got the job!</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">January 2017</div>
+										<div class="eventDesc">
+											<div class="title">Was selected to be an FHP Leader for Fall 2017</div>
+											<div class="details">I attended training sessions all Spring semester to learn how to plan and run the course.</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">November 2016</div>
+										<div class="eventDesc">
+											<div class="title">Applied to become a First-Year Honors Program (FHP) Leader</div>
+											<div class="details">I would be a TA for an intro Honors class for freshman at ISU!</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">October 2016</div>
+										<div class="eventDesc">
+											<div class="title">Got involved in groups on campus</div>
+											<div class="details">Software Engineering Learning Community, Computer Science and Software Engineering Club, and Game Development Club.</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">August 2016</div>
+										<div class="eventDesc">
+											<div class="title">Began my Freshman year at Iowa State University</div>
+											<div class="details">Go Cyclones!</div>
+										</div>
+									</li>
+
+									<li class="education">
+										<div class="date">Spring 2016</div>
+										<div class="eventDesc">
+											<div class="title">Took my first coding class</div>
+											<div class="details">This class helped me decide to become a Software Engineering major.</div>
 										</div>
 									</li>
 
@@ -210,7 +377,7 @@
 
 					<!--- Present --->
 
-					<div class="col-lg-4 tl-col" id="tlMidCol">
+					<div class="col-xl-4 tl-col" id="tlMidCol">
 						<div class="panel" id="present">
 
 							<div class="sub-header">
@@ -220,59 +387,11 @@
 							<div class="updates" id="presentEvents">
 								<ul class="dropdown">
 
-									<li class="education">
-										<div class="date">Test Date</div>
+									<li class="professional">
+										<div class="date">December 2019</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="career">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="event">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Currently job-hunting for after my graduation in May 2020</div>
+											<div class="details">Check out my resume, LinkedIn, and contact info below!</div>
 										</div>
 									</li>
 
@@ -283,7 +402,7 @@
 
 					<!--- Future --->
 
-					<div class="col-lg-4 tl-col" id="tlRightCol">
+					<div class="col-xl-4 tl-col" id="tlRightCol">
 						<div class="panel" id="future">
 
 							<div class="sub-header">
@@ -294,60 +413,21 @@
 								<ul class="dropdown">
 
 									<li class="education">
-										<div class="date">Test Date</div>
+										<div class="date">May 2020</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="career">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">My graduation from Iowa State University</div>
+											<div class="details">Now onto the real world!</div>
 										</div>
 									</li>
 
 									<li class="event">
-										<div class="date">Test Date</div>
+										<div class="date">March 2020</div>
 										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
+											<div class="title">Will be attending the Game Development Conference in San Fransisco</div>
+											<div class="details">Planning to network, make contacts, and look for job opportunities.</div>
 										</div>
 									</li>
 
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
-
-									<li class="misc">
-										<div class="date">Test Date</div>
-										<div class="eventDesc">
-											<div class="title">This is sample text. This is sample text. This is sample text. This is sample text.</div>
-											<div class="details">Sample details.</div>
-										</div>
-									</li>
 								</ul>
 							</div>
 						</div>

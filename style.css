@@ -51,7 +51,7 @@ h1,h2,h3,.pbtn {
   background: white;
 }
 
-.nav-item a, p {
+.nav-item a {
   color: #239023;
 }
 
@@ -151,21 +151,13 @@ html {
   margin-top: 20px;
 }
 
+#aboutRow{
+  background: #222222;
+}
+
 .about-col {
   display: block;
   height: fit-content;
-}
-
-#aboutLeftCol {
-
-}
-
-#aboutMidCol {
-
-}
-
-#aboutRightCol {
-
 }
 
 #aboutLeftCol h2 {
@@ -191,10 +183,27 @@ html {
   color: #adadad;
 }
 
+#aboutMidCol .panel {
+  background: #222222;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
 #aboutRightCol h2 {
   font-size: 25px;
   border-bottom: 2px solid white;
+  padding-left: 5px;
   margin-bottom: 10px;
+}
+
+#aboutRightCol .panel p {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #adadad;
 }
 
 #aboutRightCol .panel {
@@ -213,11 +222,55 @@ html {
   padding-bottom: 1px;
 }
 
+#skillsRow h2 {
+  font-size: 25px;
+  border-bottom: 2px solid white;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+#skillsRow .panel p {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #adadad;
+}
+
+#skillsRow .panel {
+  background: #222222;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+
 #aboutSkills h3 {
   font-size: 18px;
   font-weight: 300;
-  padding-left: 10px;
+  padding-left: 5px;
   color: #239023;
+}
+
+#aboutSkills ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#aboutSkills li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 200;
+  min-width: 100px;
+  padding: 8px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #ADADAD;
+  color: #ADADAD;
 }
 
 /* End of About Me */
@@ -233,9 +286,76 @@ html {
   display: inline-block;
 }
 
+#timeline_row {
+  color: #239023;
+  justify-content: center;
+}
+
 .tl-col {
   display: block;
   height: fit-content;
+}
+
+.education, .education_col {
+  color: #A81717;
+}
+
+.professional, .professional_col {
+  color: #1756A8;
+}
+
+.event, .event_col {
+  color: #8817A8;
+}
+
+.misc, .misc_col {
+  color: #A87817;
+}
+
+#updates_key {
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 6px;
+  justify-content: center;
+  color: #239023;
+}
+
+#updates_key .education_col, #updates_key .professional_col, #updates_key .event_col, #updates_key .misc_col {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  text-align: center;
+  width: fit-content;
+}
+
+#updates_key button {
+  padding: 5px;
+  min-width: 150px;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color: #222222;
+  background: #222222;
+  color: inherit;
+  text-decoration: none;
+}
+
+#updates_key button.deselected {
+  border-color: inherit;
+  background: #333333;
+}
+
+#updates_key button:hover {
+  border-color: inherit;
+  background: #333333;
+}
+
+#updates_key button.deselected:hover, button:focus {
+  outline: 0;
+  border-color: #222222;
+  background: #222222;
 }
 
 .sub-header {
@@ -256,6 +376,7 @@ html {
   border-radius: 6px;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-height: 400px;
 }
 
 #tlMidCol h2 {
@@ -269,6 +390,7 @@ html {
   border-radius: 6px;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-height: 400px;
 }
 
 #tlRightCol h2 {
@@ -282,6 +404,7 @@ html {
   border-radius: 6px;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-height: 400px;
 }
 
 #past, #present, #future {
@@ -291,7 +414,7 @@ html {
 }
 
 .updates {
-  max-height: 740px;
+  max-height: 300px;
   overflow-y: scroll;
 }
 
@@ -324,6 +447,7 @@ html {
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  padding-left: 30px;
 }
 
 .updates li:hover {
@@ -334,7 +458,6 @@ html {
   font-weight: 300;
   font-size: 15px;
   min-width: 150px;
-  color: white;
 }
 
 .updates .title {
