@@ -152,6 +152,7 @@ html {
 }
 
 #aboutRow{
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,10 +231,6 @@ html {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-#aboutPerson {
-  padding-bottom: 20px;
 }
 
 #skillsRow {
@@ -776,6 +773,10 @@ html {
   border-width: 2px;
   border-color: #239023;
   background: #333333;
+}
+
+#contact-button:focus {
+  outline: 0 none;
 }
 
 /*End of Contact Me */
