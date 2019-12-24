@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 body {
   display: flex;
@@ -10,13 +9,17 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 
+body::-webkit-scrollbar-track-piece {
+  background: white;
+}
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 0 #222222;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #239023;
+  background: #18B218;
 }
 
 /* End of ScrollBar */
@@ -24,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 /* Overall Font Properties */
 
 h1,h2,h3,.pbtn {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
   color: white;
 }
@@ -52,7 +55,7 @@ h1,h2,h3,.pbtn {
 }
 
 .nav-item a {
-  color: #239023;
+  color: #18B218;
 }
 
 .nav-item a:hover {
@@ -60,7 +63,7 @@ h1,h2,h3,.pbtn {
 }
 
 .fa-bars {
-  color: #239023;
+  color: #18B218;
 }
 
 .fa-bars:hover {
@@ -94,21 +97,24 @@ html {
 
 
 .center-content h1 {
-  font-size: 50px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid white;
+  font-size: 60px;
   color: white;
 }
 
 .center-content h2 {
-  font-size: 35px;
+  font-size: 40px;
+  padding-top: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid white;
   color: white;
 }
 
 /* End Header */
 
 .body-container {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Exo 2", sans-serif;
   font-size: 100%;
   background-color: #333333;
   color: #white:
@@ -186,7 +192,7 @@ html {
 #aboutLeftCol .panel p {
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   color: #adadad;
 }
@@ -215,7 +221,7 @@ html {
 #aboutRightCol .panel p {
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   color: #adadad;
 }
@@ -242,7 +248,7 @@ html {
   font-size: 25px;
   border-bottom: 2px solid white;
   padding-left: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #skillsRow .panel {
@@ -252,23 +258,25 @@ html {
 }
 
 #aboutSkills h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   padding-left: 5px;
-  color: #239023;
+  color: #18B218;
 }
 
 #aboutSkills ul {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 #aboutSkills li {
   display: inline-block;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 200;
   min-width: 100px;
   padding: 8px;
+  margin-left: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
   line-height: 20px;
   text-align: center;
@@ -293,8 +301,12 @@ html {
 }
 
 #timeline_row {
-  color: #239023;
+  color: #18B218;
   justify-content: center;
+}
+
+#timeline_row p {
+  font-size: 17px;
 }
 
 .tl-col {
@@ -303,19 +315,23 @@ html {
 }
 
 .education, .education_col {
-  color: #A81717;
+  font-size: 17px;
+  color: #B21818;
 }
 
 .professional, .professional_col {
-  color: #1756A8;
+  font-size: 17px;
+  color: #185BB2;
 }
 
 .event, .event_col {
-  color: #8817A8;
+  font-size: 17px;
+  color: #9118B2;
 }
 
 .misc, .misc_col {
-  color: #A87817;
+  font-size: 17px;
+  color: #B27F18;
 }
 
 #updates_key {
@@ -325,7 +341,7 @@ html {
   width: 100%;
   border-radius: 6px;
   justify-content: center;
-  color: #239023;
+  color: #18B218;
 }
 
 #updates_key .education_col, #updates_key .professional_col, #updates_key .event_col, #updates_key .misc_col {
@@ -427,7 +443,7 @@ html {
 
 .updates::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #239023;
+  background: #18B218;
 }
 
 .dropdown {
@@ -445,7 +461,7 @@ html {
 .updates li .eventDesc {
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  font-size: 17px;
   padding-left: 20px;
 }
 
@@ -455,7 +471,7 @@ html {
 
 .updates .date {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   min-width: 150px;
 }
 
@@ -484,9 +500,9 @@ html {
 .updates li:hover .details {
   visibility: visible;
   opacity: 1;
-  color: #239023;
+  color: #18B218;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 15px;
   max-height: 300px;
   padding-top: 2px;
   transition: visibility 0s, opacity.7s, maxheight 0.8s linear;
@@ -538,6 +554,7 @@ html {
   margin-bottom: 50px;
   width: auto;
   height: auto;
+  max-width: 500px;
 
   display: flex;
   justify-content: center;
@@ -563,7 +580,7 @@ html {
 
 .projectDesc h1 {
   font-size: 40px;
-  font-family: monospace;
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
   padding-left: 10px;
   margin-top: 10px;
@@ -577,7 +594,7 @@ html {
   padding-bottom: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
-  color: #239023
+  color: #18B218
 }
 
 .project_date {
@@ -594,7 +611,7 @@ html {
   padding: 5px;
   padding-left: 10px;
   margin: 10px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 200;
   color: #ADADAD;
 }
@@ -603,7 +620,7 @@ html {
   border-top: white 2px solid;
   padding-top: 15px;
   padding-bottom: 10px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /* End of Past Projects */
@@ -657,14 +674,14 @@ html {
   font-size: 70px;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #239023;
+  color: #18B218;
 }
 
 .fa-linkedin-in {
   font-size: 70px;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #239023;
+  color: #18B218;
 }
 
 #links h3 {
@@ -711,14 +728,14 @@ html {
 }
 
 #email-input {
-  font-size: 15px;
+  font-size: 17px;
   width: 100%;
   margin-bottom: 10px;
   padding: 5px;
   border-style: solid;
   border-radius: 5px;
   border-width: 2px;
-  border-color: #239023;
+  border-color: #18B218;
   background: #333333;
   color: white;
 }
@@ -737,16 +754,16 @@ html {
 
 #message-input::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #239023;
+  background: #18B218;
 }
 
 #message-input::-webkit-scrollbar-corner {
-  background: #239023;
+  background: #18B218;
 }
 
 #message-input {
   resize: none;
-  font-size: 15px;
+  font-size: 17px;
   color: white;
   width: 100%;
   height: 200px;
@@ -755,7 +772,7 @@ html {
   border-style: solid;
   border-radius: 5px;
   border-width: 2px;
-  border-color: #239023;
+  border-color: #18B218;
   background: #333333;
 }
 
@@ -772,13 +789,13 @@ html {
   border-radius: 5px;
   border-width: 2px;
   border-color: white;
-  background: #239023;
+  background: #18B218;
 }
 
 #contact-button:focus {
   outline: 0 none;
-  color: #239023;
-  border-color: #239023;
+  color: #18B218;
+  border-color: #18B218;
   background: #333333;
 }
 
@@ -801,5 +818,5 @@ html {
   display: flex;
   justify-content: flex-end;
   background: white;
-  color: #239023;
+  color: #18B218;
 }
