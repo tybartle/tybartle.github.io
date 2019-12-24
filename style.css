@@ -554,13 +554,20 @@ html {
   margin-bottom: 50px;
   width: auto;
   height: auto;
-  max-width: 500px;
+  max-width: 600px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
+}
+
+.carousel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 
   outline-style: solid;
   outline-width: 2px;
@@ -575,7 +582,19 @@ html {
 }
 
 .carousel-indicators {
-  padding-bottom: 15px;
+  bottom: -45px;
+}
+
+.carousel-indicators .active {
+  background-color: #18B218;
+}
+
+.carousel-control-prev {
+  margin-left: -55px;
+}
+
+.carousel-control-next {
+  margin-right: -55px;
 }
 
 .projectDesc h1 {
